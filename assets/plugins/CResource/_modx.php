@@ -7,6 +7,7 @@ $dir = dirname(__FILE__);
 $root_dir = dirname(dirname(dirname($dir)));
 
 define('MODX_API_MODE', true);
+define("IN_MANAGER_MODE", 'true'); //Чтобы не санитизировались данные в таблицах easyUI в Админке
 
 include_once($root_dir . "/index.php");
 
